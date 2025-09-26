@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Table Tennis Stats — 卓球のスコア＆ラリーを見える化</title>
+  <meta name="description" content="Table Tennis Statsは卓球の試合を簡単に記録し、ラリーやスコアを自動分析。ヒートマップやサービス統計で傾向を可視化します。" />
+  <style>
+    body { font-family: -apple-system, "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif; margin:0; color:#222; background:#f7f7f7; }
+    .wrap { max-width:980px; margin:28px auto; padding:24px; background:white; box-shadow:0 4px 20px rgba(0,0,0,0.06); border-radius:10px; }
+    header { display:flex; align-items:center; gap:16px; }
+    .logo { width:72px; height:72px; background:linear-gradient(135deg,#2b9df4,#1f7fe1); border-radius:12px; display:flex; align-items:center; justify-content:center; color:white; font-weight:700; font-size:18px; }
+    h1 { margin:0; font-size:22px; }
+    .promo { margin-top:12px; padding:12px; background:#f0f8ff; border-radius:8px; color:#0b57a4; font-weight:700; }
+    section { margin-top:20px; }
+    h2 { margin:0 0 8px 0; font-size:18px; color:#1b3a57; }
+    ul { margin:8px 0 0 1rem; padding:0; }
+    li { margin:6px 0; line-height:1.6; }
+    .cta { display:flex; gap:12px; margin-top:16px; flex-wrap:wrap; }
+    .btn { display:inline-block; padding:10px 16px; border-radius:8px; text-decoration:none; color:white; background:#1f7fe1; font-weight:600; }
+    .btn.secondary { background:#6b7280; }
+    .note { margin-top:12px; color:#6b6b6b; font-size:14px; }
+    footer { margin-top:28px; border-top:1px solid #eee; padding-top:14px; color:#555; font-size:13px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; }
+    .features { display:grid; grid-template-columns: repeat(auto-fit, minmax(220px,1fr)); gap:12px; margin-top:8px; }
+    .feature { background:#fafafa; padding:12px; border-radius:8px; border:1px solid #f0f0f0; }
+    .highlight { color:#0b57a4; font-weight:700; }
+    @media (max-width:600px) {
+      .logo { width:56px; height:56px; font-size:16px; }
+      .wrap { margin:12px; padding:16px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <div class="logo">TT<br/>Stats</div>
+      <div>
+        <h1>Table Tennis Stats</h1>
+        <div style="color:#555; margin-top:6px;">卓球のスコアとラリー内容を「見える化」 — 記録した内容は自動分析！</div>
+      </div>
+    </header>
+
+    <div class="promo">プロモーションテキスト：卓球のスコアとラリー内容を「見える化」　記録した内容は自動分析！</div>
+
+    <section>
+      <h2>説明</h2>
+      <p>Table Tennis Statsは卓球の試合を簡単に記録し、データ分析できるアプリです。ラリーごとのプレー内容や得点経過を直感的に入力でき、サーブ本数・サービスエース率・ラリー数などを自動集計して傾向を分析！試合後に選手ごとの傾向や強み・課題を数値で振り返ることができます。</p>
+    </section>
+
+    <section>
+      <h2>主な機能</h2>
+      <div class="features">
+        <div class="feature"><span class="highlight">スコア記録</span><br/>試合の得点やラリーの流れをワンタップで入力して表示</div>
+        <div class="feature"><span class="highlight">詳細統計</span><br/>サービスエース率や3球目決定率などを自動集計・分析</div>
+        <div class="feature"><span class="highlight">プレー分析</span><br/>どの位置へ打つことが多いかをヒートマップで可視化</div>
+        <div class="feature"><span class="highlight">試合管理</span><br/>複数の試合データを保存・比較（15件まで無料）</div>
+        <div class="feature"><span class="highlight">シンプルUI</span><br/>試合中でも使いやすいデザイン</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>こんな方におすすめ</h2>
+      <ul>
+        <li>卓球の試合内容を客観的に振り返りたい選手</li>
+        <li>指導のために選手のデータを管理したいコーチ</li>
+        <li>子どもの試合を記録して成長を見守りたい保護者</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>使い方（かんたん）</h2>
+      <ul>
+        <li>まずは画面右上の「＋」から試合を登録しましょう。</li>
+        <li>相手の基本情報（チーム名、氏名、大会名、場所、利き手、ラケット、ラバー、メモ）を登録できます。</li>
+        <li>あとは得点・失点のボタンを押すだけ。各ポイントを長押しで編集や得点切替も可能。</li>
+        <li>ラリー登録は自動で画面が開き、プレーを選んでS/E（始点/終点）をタップすると矢印が表示されます。</li>
+        <li>サーブやコート位置は自由に設定可能。ジュニアでのサーブ権交代にも対応。</li>
+        <li>「ラリー登録OFF」で得点登録だけに集中することもできます。</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>分析項目（例）</h2>
+      <p>ヒートマップ、サーブ/レシーブの得点率、サービスエース率、サーブミス率、レシーブエース率、レシーブミス率、3/5/7球目の成功・失敗・決定率など。自分と相手を比較でき、数字部分をタップすると対象プレーの詳細も見られます。</p>
+    </section>
+
+    <section>
+      <h2>料金とアップグレード</h2>
+      <p>15件まで無料で利用できます。まずは無料範囲でお試しください。15件以上登録したい、広告を解除したい場合はアプリ内課金でアップグレードできます。</p>
+      <div class="cta">
+        <a class="btn" href="#" onclick="alert('App Store へリンクを設定してください'); return false;">App Storeで見る</a>
+        <a class="btn secondary" href="privacy.html">プライバシーポリシー</a>
+      </div>
+      <p class="note">※アプリ内課金や価格は App Store 上の表示が優先されます。</p>
+    </section>
+
+    <footer>
+      <div>サポート: <a href="mailto:13.the.shinomaru@gmail.com">13.the.shinomaru@gmail.com</a></div>
+      <div>© Table Tennis Stats</div>
+    </footer>
+  </main>
+</body>
+</html>
