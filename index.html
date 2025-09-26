@@ -24,9 +24,21 @@
     .features { display:grid; grid-template-columns: repeat(auto-fit, minmax(220px,1fr)); gap:12px; margin-top:8px; }
     .feature { background:#fafafa; padding:12px; border-radius:8px; border:1px solid #f0f0f0; }
     .highlight { color:#0b57a4; font-weight:700; }
+    .logo img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain; /* 画像をはみ出さないように縮小 */
+      display: block;
+    }
+    .logo {
+      width: 80px;   /* ロゴ枠のサイズ（調整可能） */
+      height: 80px;
+    }
     @media (max-width:600px) {
-      .logo { width:56px; height:56px; font-size:16px; }
-      .wrap { margin:12px; padding:16px; }
+      .logo {
+        width: 56px;
+        height: 56px;
+      }
     }
   </style>
 </head>
